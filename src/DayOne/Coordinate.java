@@ -1,3 +1,4 @@
+package DayOne;
 
 public class Coordinate {
 	int x;
