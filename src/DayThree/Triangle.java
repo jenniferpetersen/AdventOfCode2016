@@ -9,14 +9,9 @@ public class Triangle {
 			this.x = x;
 			this.y = y;
 			this.z = z;
-
 	}
 	
-/*	private boolean checkValid() {
-		if (x + y > z && x + z > y && y + z > x)
-			return true;
-		else
-			return false;
-	}*/
-
+    public int getX() { return x; }
+    public int getY() { return y; }
+    public int getZ() { return z; }
 }

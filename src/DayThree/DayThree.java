@@ -18,7 +18,7 @@ public class DayThree {
 	
 	private void readFile() {
 		try {
-			Scanner scanner = new Scanner(new File("triples.txt"));
+			Scanner scanner = new Scanner(new File("inputDayThree.txt"));
 			
 			while(scanner.hasNextLine()) {
 				int triF = scanner.nextInt();
@@ -26,6 +26,7 @@ public class DayThree {
 				int triT = scanner.nextInt();
 				addTriple(triF, triS, triT);
 			}
+			scanner.close();
 			
 		} catch (FileNotFoundException e) {
 			System.out.println("File not found.");
