@@ -1,6 +1,6 @@
 package DayTwo;
 
-public class KeyPad {
+public class KeyPadOne {
 	private static final int MAX_ROW = 2;
 	private static final int MAX_COL = 2;
 	private static final int MIN_ROW = 0;
@@ -11,7 +11,7 @@ public class KeyPad {
 	private int currentRow;
 	private int currentCol;
 	
-	public KeyPad(int row, int col) {
+	public KeyPadOne(int row, int col) {
 		currentRow = row;
 		currentCol = col;
 		code = "";
