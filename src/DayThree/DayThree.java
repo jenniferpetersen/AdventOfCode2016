@@ -5,15 +5,15 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class DayThree {
-	private static ArrayList<Triangle> triangles = new ArrayList<>();
 	private ArrayList<Triple> triplets = new ArrayList<>();
+	private static int numTriangles;
 	
 	public static void main(String[] args) {
 		DayThree dt = new DayThree();
 		dt.readFile();
-		dt.createTriangles();
+		dt.checkTriangles();
 		
-		System.out.println(triangles.size());
+		System.out.println(numTriangles);
 	}
 	
 	private void readFile() {
@@ -38,15 +38,14 @@ public class DayThree {
 		triplets.add(tri);
 	}
 	
-	private void createTriangles() {
+	private void checkTriangles() {
 		for (Triple tri : triplets) {
 			int x = tri.getFirst();
 			int y = tri.getSecond();
 			int z = tri.getThird();
 			
 			if (validTriangle(x,y,z)) {
-				Triangle newTri = new Triangle(x,y,z);
-				triangles.add(newTri);
+				numTriangles++;
 			}
 		}
 	}
